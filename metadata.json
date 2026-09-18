@@ -1,6 +1,6 @@
 {
-  "name": "Vértice Governança Operacional",
-  "description": "Controladoria de contratos, fornecedores e compliance organizacional para empresas em crescimento em Rio Claro e região.",
+  "name": "DNA - Direto no Alvo",
+  "description": "Controladoria de contratos, fornecedores e procedimento organizacional para empresas em crescimento em Rio Claro e região.",
   "requestFramePermissions": [],
   "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
 }
