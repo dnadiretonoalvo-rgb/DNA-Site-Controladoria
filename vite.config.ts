@@ -5,7 +5,7 @@ import {defineConfig} from 'vite';
 
 export default defineConfig(() => {
   return {
-    base: '/Site-DNA/',
+    base: '/',
     plugins: [react(), tailwindcss()],
     resolve: {
       alias: {
