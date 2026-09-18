@@ -25,7 +25,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate, onOpenDiagnostic }) 
                 <ShieldCheck className="w-6 h-6 text-blue-300" />
               </div>
               <div>
-                <span className="font-bold text-xl tracking-tight text-white block">VÉRTICE</span>
+                <span className="font-bold text-xl tracking-tight text-white block">DNA</span>
                 <span className="text-[10px] uppercase font-bold tracking-[0.2em] text-slate-400 block">
                   Governança Operacional
                 </span>
