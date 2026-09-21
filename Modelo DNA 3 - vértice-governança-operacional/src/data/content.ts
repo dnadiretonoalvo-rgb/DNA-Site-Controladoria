@@ -11,7 +11,7 @@ export const COMPANY_INFO = {
   phoneDisplay: '(19) 3522-8900',
   whatsappDisplay: '(19) 19 99608-1130',
   whatsappNumber: '5519996081130',
-  email: 'diretoria@verticegovernanca.com.br',
+  email: 'contato@diretonoalvo.com.br',
   address: 'Rua 3-A, 1120 - Cidade Nova, Rio Claro - SP',
   workingHours: 'Segunda a Sexta, das 08h00 às 18h00',
 };
