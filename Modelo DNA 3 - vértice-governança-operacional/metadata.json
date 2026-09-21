@@ -1,0 +1,6 @@
+{
+  "name": "DNA - Direto no Alvo Governança Operacional",
+  "description": "Controladoria de contratos, fornecedores e compliance organizacional para empresas em crescimento em Rio Claro e região.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
