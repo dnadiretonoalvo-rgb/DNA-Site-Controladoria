@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { PageId } from '../types';
 import { COMPANY_INFO } from '../data/content';
-import logoDNA from '../assets/logo-dna.PNG';
+import logoDNA from '../assets/logo-dna.png';
 import { 
   ShieldCheck, 
   FileText, 
@@ -73,9 +73,14 @@ export const Header: React.FC<HeaderProps> = ({
             className="flex items-center gap-3 text-left group cursor-pointer focus:outline-hidden"
             id="brand-logo-btn"
           >
-            <div className="w-11 h-11 rounded-lg bg-[#0F2347] flex items-center justify-center text-white shadow-sm border border-slate-700/40 group-hover:bg-[#16356B] transition-colors">
-              <ShieldCheck className="w-6 h-6 text-blue-300" />
-            </div>
+            <div className="flex items-center justify-center shrink-0 transition-transform group-hover:scale-105 duration-200">
+  <img 
+    src={logoDNA} 
+    alt="Logo DNA" 
+    className="h-12 w-auto object-contain" 
+  />
+</div>
+
             <div>
               <div className="font-extrabold text-xl tracking-tight text-[#0B1528] group-hover:text-blue-900 transition-colors">
                 DNA - Direto no Alvo
