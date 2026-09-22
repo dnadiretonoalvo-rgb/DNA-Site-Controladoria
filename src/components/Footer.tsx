@@ -1,7 +1,8 @@
 import React from 'react';
 import { PageId } from '../types';
 import { COMPANY_INFO } from '../data/content';
-import { ShieldCheck, Phone, Mail, MapPin, Lock, ArrowUpRight, Clock } from 'lucide-react';
+import logoDNA from '../assets/logo-dna.png';
+import { Phone, Mail, MapPin, Lock, ArrowUpRight, Clock } from 'lucide-react';
 
 interface FooterProps {
   onNavigate: (page: PageId) => void;
@@ -20,17 +21,26 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate, onOpenDiagnostic }) 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-12 border-b border-slate-800">
           {/* Col 1: Brand and Concept (span 2) */}
           <div className="lg:col-span-2 space-y-4">
-            <div className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-lg bg-blue-900 flex items-center justify-center text-white border border-blue-700/50">
-                <ShieldCheck className="w-6 h-6 text-blue-300" />
+            <button 
+              onClick={() => handleNav('home')}
+              className="flex items-center gap-3 text-left group cursor-pointer focus:outline-hidden"
+            >
+              <div className="flex items-center justify-center shrink-0 transition-transform group-hover:scale-105 duration-200">
+                <img 
+                  src={logoDNA} 
+                  alt="Logo DNA - Direto no Alvo" 
+                  className="h-12 w-auto object-contain rounded-md" 
+                />
               </div>
               <div>
-                <span className="font-bold text-xl tracking-tight text-white block">DNA - Direto no Alvo</span>
+                <span className="font-bold text-xl tracking-tight text-white group-hover:text-blue-300 transition-colors block">
+                  DNA - Direto no Alvo
+                </span>
                 <span className="text-[10px] uppercase font-bold tracking-[0.2em] text-slate-400 block">
                   Governança Operacional
                 </span>
               </div>
-            </div>
+            </button>
 
             <p className="text-sm text-slate-400 leading-relaxed max-w-md">
               Mais controle sobre o que acontece dentro da empresa. Mais visibilidade para quem toma as decisões. Transformamos informações dispersas, contratos e relacionamentos críticos em uma estrutura de acompanhamento segura e previsível.
