@@ -70,22 +70,29 @@ export const Header: React.FC<HeaderProps> = ({
           {/* Brand Logo */}
           <button 
             onClick={() => handleNavClick('home')}
-            className="flex items-center gap-3 text-left group cursor-pointer focus:outline-hidden"
+            className="flex items-center gap-3 text-left group cursor-pointer focus:outline-hidden py-1"
             id="brand-logo-btn"
           >
-            <div className="flex items-center justify-center shrink-0 transition-transform group-hover:scale-105 duration-200">
-  <img 
-    src={logoDNA} 
-    alt="Logo DNA" 
-    className="h-12 w-auto object-contain" 
-  />
-</div>
+            <div className="relative flex items-center justify-center w-12 h-12 rounded-xl bg-gradient-to-br from-[#0F2244] via-[#0B1528] to-[#060D1A] p-0.5 shadow-sm shadow-blue-950/20 border border-slate-700/50 ring-1 ring-amber-500/20 group-hover:border-amber-400/50 group-hover:ring-amber-400/30 group-hover:shadow-md transition-all duration-300 overflow-hidden shrink-0">
+              <img 
+                src={logoDNA} 
+                alt="Logo DNA - Direto no Alvo" 
+                className="w-full h-full object-cover scale-115 group-hover:scale-125 transition-transform duration-300" 
+              />
+              <div className="absolute inset-0 bg-gradient-to-tr from-transparent via-amber-400/5 to-white/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
+            </div>
 
-            <div>
-              <div className="font-extrabold text-xl tracking-tight text-[#0B1528] group-hover:text-blue-900 transition-colors">
-                DNA - Direto no Alvo
+            <div className="flex flex-col justify-center">
+              <div className="flex items-center gap-1.5">
+                <span className="font-extrabold text-xl tracking-tight text-[#0B1528] group-hover:text-blue-950 transition-colors">
+                  DNA
+                </span>
+                <span className="inline-block w-1 h-1 rounded-full bg-amber-500/80"></span>
+                <span className="text-sm font-semibold text-slate-700 group-hover:text-slate-900 transition-colors">
+                  Direto no Alvo
+                </span>
               </div>
-              <div className="text-[10px] uppercase font-bold tracking-[0.2em] text-slate-500">
+              <div className="text-[10px] uppercase font-bold tracking-[0.2em] text-blue-900/85 group-hover:text-blue-900 transition-colors mt-0.5">
                 Governança Operacional
               </div>
             </div>
