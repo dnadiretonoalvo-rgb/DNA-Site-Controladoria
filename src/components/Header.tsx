@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { PageId } from '../types';
 import { COMPANY_INFO } from '../data/content';
-import logoDNA from '../assets/logo-dna.png';
+import logoDNA from '../assets/logo-dna.PNG';
 import { 
   ShieldCheck, 
   FileText, 
